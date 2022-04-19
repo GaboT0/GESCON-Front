@@ -3,9 +3,34 @@ import {useState} from 'react'
 function Login(){
 
     return(
-        <div className="m-0 vh-100 row justify-content-center align-items-center">
-            <Formulario />
-        </div>
+        <body>
+            <header class="header  container-xxl">
+            <div class="container-fluid">
+                <div class="row align-items-start">
+                    <div class="margin-up col-4">
+                        <a class="logo" href="index.html">
+                            <h1 class="no-margin">GESCON</h1>
+                        </a>
+                    </div>
+                    <div class="margin-up col-8">
+                    <nav class="text-end ">
+                        <a href="/nosotros" class="nave padd">Nosotros</a>
+                        <a href="/congresos" class="nave padd" >Congresos</a>
+                        <a href="/contacto" class="nave padd">Contacto</a>
+                        <a href={Login} class="nave padd">Login</a>
+                        
+                    </nav>
+                    </div>            
+                </div>
+            </div>
+
+            </header>
+            
+            <div className="m-0  row justify-content-center align-items-center">
+                <Formulario />
+            </div>
+        </body>
+        
     );
 }
 
